@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menu.CallsFragment">
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/call_list_recycler_view"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"/>
+
+   <LinearLayout
+       android:id="@+id/ll_invite"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="30dp"
+       android:layout_gravity="center"
+       android:gravity="center_horizontal"
+       android:orientation="vertical">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Invite your friends"
+          android:textColor="@color/black"
+          android:textSize="25sp" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="20dp"
+          android:gravity="center_horizontal"
+          android:padding="20dp"
+          android:text="None of your contacts are using FyreApp2. \nUse the button below to invite them"
+          android:textColor="@color/black" />
+
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="30dp"
+          android:layout_marginEnd="30dp"
+          android:gravity="center_horizontal"
+          android:text="Invite friends" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="20dp"
+          android:gravity="center_horizontal"
+          android:padding="20dp"
+          android:text="Chat with your friends who use FyreApp2 on iPhone, Android or kaiOS phone"
+          android:textColor="@color/black" />
+
+   </LinearLayout>
+
+</FrameLayout></layout>
